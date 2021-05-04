@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const categories = require('./routes/categories');
+const categories = require('./routes/categories.routes');
 
 // Entry point of the API
 router.get('/', (req, res) => {
