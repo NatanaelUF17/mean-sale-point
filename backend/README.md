@@ -14,3 +14,10 @@ Run `npm install cors` to install cors
 
 Run `npm install dotenv` to install dotenv
 
+## Morgan
+
+Run `npm install morgan` to install morgan
+
+## Helmet
+
+Run `npm install helmet` to install helmet

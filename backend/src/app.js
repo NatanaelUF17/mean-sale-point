@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
+const morgan = require('morgan');
 
 require('dotenv').config();
 
@@ -9,6 +11,8 @@ const api = require('./api/index');
 
 app.use(express.json());
 app.use(cors());
+app.use(morgan('tiny'));
+app.use(helmet());
 
 // Entry point of the backend server 
 app.get('/', (req, res, next) => {
