@@ -6,7 +6,7 @@ const categories = require('./routes/categories.routes');
 // Entry point of the API
 router.get('/', (req, res) => {
     res.json({
-        message: 'Welcome to this API',
+        message: 'Welcome to this API 🦈💙',
     });
 });
 
