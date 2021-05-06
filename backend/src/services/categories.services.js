@@ -1,7 +1,7 @@
 const database = require('../data/database.config');
 
 // Get all categories service
-exports.getAllCategories = (result) => {
+exports.getAll = (result) => {
     
     let sqlQuery = 'SELECT * FROM category';
 
@@ -17,7 +17,7 @@ exports.getAllCategories = (result) => {
 };
 
 // Get one category service (by id)
-exports.getOneCategory = (id, result) => {
+exports.getOneById = (id, result) => {
  
     let sqlQuery = 'SELECT * FROM category WHERE Id = ?';
 
@@ -41,7 +41,7 @@ exports.getOneCategory = (id, result) => {
 };
 
 // Create category service
-exports.createCategory = (category, result) => {
+exports.create = (category, result) => {
 
     let sqlQuery = 'INSERT INTO category (Name) VALUES (?)';
 
@@ -58,7 +58,7 @@ exports.createCategory = (category, result) => {
 
 
 // Update category service (by id)
-exports.updateCategory = (id, category, result) => {
+exports.updateById = (id, category, result) => {
 
     let sqlQuery = 'UPDATE category SET Name = ? WHERE Id = ?';
 
@@ -80,7 +80,7 @@ exports.updateCategory = (id, category, result) => {
 };
 
 // Delete category service (by id)
-exports.deleteCategory = (id, result) => {
+exports.deleteById = (id, result) => {
 
     let sqlQuery = 'DELETE FROM category WHERE Id = ?';
 
